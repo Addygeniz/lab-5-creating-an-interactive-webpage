@@ -26,7 +26,6 @@ header, footer {
     max-width: 120px;
     height: auto;
 }
-
 .site-title {
     font-size: 2.2rem;
     font-weight: bold;
@@ -39,19 +38,16 @@ nav ul {
     list-style: none; 
     padding: 0;
 }
-
 nav ul li {
     display: inline; 
     margin: 0 15px;
 }
-
 nav a {
     text-decoration: none; 
     color: #a0522d;
     font-weight: bold;
     transition: color 0.3s; 
 }
-
 nav a:hover {
     color: #d2691e; 
 }
@@ -75,4 +71,31 @@ section {
 /*conact fields*/
 .form-group {
     margin-bottom: 20px;
+}
+label {
+    display: block; /* Puts label on its own line above the input */
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+input, textarea, select {
+    width: 100%; /* Makes inputs fill the container width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/*buttons*/
+button {
+    background-color: #a0522d; /* Chocolate Brown */
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background-color: #8b4513; /* Darker brown when hovered */
 }
