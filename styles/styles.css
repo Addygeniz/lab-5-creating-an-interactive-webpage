@@ -55,3 +55,10 @@ nav a {
 nav a:hover {
     color: #d2691e; 
 }
+
+/*main content area*/
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
