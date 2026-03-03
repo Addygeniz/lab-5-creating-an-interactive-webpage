@@ -99,3 +99,13 @@ button {
 button:hover {
     background-color: #8b4513; /* Darker brown when hovered */
 }
+
+/*footer*/
+footer p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+.socials a {
+    margin: 0 5px;
+    font-size: 0.85rem;
+}
