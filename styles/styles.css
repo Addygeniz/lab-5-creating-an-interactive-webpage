@@ -37,19 +37,27 @@ header, footer {
 nav ul {
     list-style: none; 
     padding: 0;
+    display: inline-block;
+    border: 1px solid #333;
 }
 nav ul li {
-    display: inline; 
-    margin: 0 15px;
+    display: block; 
+    border-bottom: 1px solid #333;
 }
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+/*header*/
 nav a {
     text-decoration: none; 
-    color: #a0522d;
-    font-weight: bold;
-    transition: color 0.3s; 
+    color: #333;
+    padding: 10px 40px;
+    display: block;
 }
-nav a:hover {
-    color: #d2691e; 
+nav a:hover, .active-page {
+    background-color: #d2691e ;
+    color: white; 
 }
 
 /*main content area*/
@@ -101,11 +109,28 @@ button:hover {
 }
 
 /*footer*/
-footer p {
-    margin-bottom: 10px;
-    font-size: 0.9rem;
+footer {
+    background-color: #f8c8dc; 
+    padding: 2rem;
+    text-align: center;
+}
+.socials {
+    display: flex;           /* Forces the links to be horizontal */
+    flex-direction: row;     /* Make them a row */
+    justify-content: center; /* Centers the row on the page */
+    gap: 30px;               /* Adds clean spacing between links */
+    margin-top: 10px;
 }
 .socials a {
-    margin: 0 5px;
-    font-size: 0.85rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline;
 }
+
+.socials a:hover {
+    color: #8b4513 !important; 
+    text-decoration: underline; /* Visual clickable */
+}
+
